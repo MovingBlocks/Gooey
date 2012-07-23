@@ -20,14 +20,14 @@
     "hubot-scripts": ">= 2.1.0",
     "optparse": "1.0.3",
 
-
-
     "githubot": "0.3.0",
     "underscore": "*",
     "underscore.string": "2.1.1",
     "date-utils": "*",
     "jsdom": "0.2.14",
-    "sandbox": "0.8.3"
+    "sandbox": "0.8.3",
+    "soupselect": "0.2.0",
+    "htmlparser": "1.7.6"
   },
 
   "engines": {
