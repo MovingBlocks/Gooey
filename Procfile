@@ -1,1 +1,1 @@
-web: bin/hubot -a irc -n Gooey
+web: bin/hubot -a irc -n Gooey -l '.'
