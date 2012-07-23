@@ -3,11 +3,15 @@
 
     "auth.coffee",
 
-    "factoid.coffee", "google.coffee",
+    "factoid.coffee", "google.coffee", "abstract.coffee", "jenkins.coffee",
 
     "github-activity.coffee", "github-commiters.coffee", "github-credentials.coffee",
     "github-issue-link.coffee", "github-issues.coffee", "github-pulls.coffee",
 
     "hideyakids.coffee", "defprogramming.coffee", "aww.coffee", "ascii.coffee",
-    "fml.coffee", "clojure.coffee", "base64.coffee", "bang-bang.coffee"
+    "fml.coffee", "clojure.coffee", "base64.coffee", "bang-bang.coffee", "facepalm.coffee",
+    "good-night.coffee", "haters.coffee", "javascript-sandbox.coffee", "look-of-disapproval.coffee",
+    "meme_generator.coffee", "xkcd.coffee", "yoda-quotes.coffee", "which-do-you-prefer.coffee",
+    "whatis.coffee", "twss.coffee", "tryerlang.coffee", "trollicon.coffee", "tell.coffee", "sigh.coffee",
+    "script.coffee", "ruby.coffee", "shipit.coffee", "romanemperor.coffee", "polite.coffee"
 ]
