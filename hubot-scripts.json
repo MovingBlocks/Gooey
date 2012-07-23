@@ -1,8 +1,13 @@
 [
     "redis-brain.coffee", "tweet.coffee", "shipit.coffee",
 
+    "auth.coffee",
+
+    "factoid.coffee", "google.coffee",
+
     "github-activity.coffee", "github-commiters.coffee", "github-credentials.coffee",
     "github-issue-link.coffee", "github-issues.coffee", "github-pulls.coffee",
 
-    "hideyakids.coffee"
+    "hideyakids.coffee", "defprogramming.coffee", "aww.coffee", "ascii.coffee",
+    "fml.coffee", "clojure.coffee", "base64.coffee", "bang-bang.coffee"
 ]
