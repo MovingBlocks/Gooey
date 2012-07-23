@@ -18,6 +18,7 @@
     "hubot": "2.3.0",
     "hubot-irc": "*",
     "hubot-scripts": ">= 2.1.0",
+    "githubot": "0.3.0",
     "optparse": "1.0.3"
   },
 
