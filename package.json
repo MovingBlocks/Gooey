@@ -26,7 +26,8 @@
     "underscore": "*",
     "underscore.string": "2.1.1",
     "date-utils": "*",
-    "jsdom": "0.2.14"
+    "jsdom": "0.2.14",
+    "sandbox": "0.8.3"
   },
 
   "engines": {
