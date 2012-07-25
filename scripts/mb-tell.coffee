@@ -23,7 +23,8 @@ module.exports = (robot) ->
       localstorage[name] = tellmessage
     else
       localstorage[name] += tellmessage
-    return
+
+    msg.send "Yes sir, " + msg.message.user.name + "! I'll relay the message to " + msg.match[1] + " when they get back online."
 
   robot.hear /./i, (msg) ->
     # just send the messages if they are available...
