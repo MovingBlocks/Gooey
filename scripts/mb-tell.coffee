@@ -15,7 +15,7 @@
 
 module.exports = (robot) ->
   localstorage = {}
-  robot.respond /tell ([\w.-]*) (.*)/i, (msg) ->
+  robot.respond /tell ([\w.-`]*) (.*)/i, (msg) ->
     datetime = new Date()
     name = msg.match[1].toLowerCase()
     tellmessage = name + ": " + msg.message.user.name + " @ " + datetime.toTimeString() + " said: " + msg.match[2] + "\r\n"
