@@ -16,19 +16,19 @@ moment = require 'moment'
 
 class MBTell
   constructor: (@robot) ->
-    messages = @robot.data.brain.messages
-    @robot.data.brain.messages = {} unless messages
+    messages = @robot.brain.data.messages
+    @robot.brain.data.messages = {} unless messages
 
   addMessage: (sender, receiver, msg) ->
-    current = @robot.data.brain.messages[receiver]
-    current = @robot.data.brain.messages[receiver] = [] unless current
+    current = @robot.brain.data.messages[receiver]
+    current = @robot.brain.data.messages[receiver] = [] unless current
     current.push sender: sender, msg: msg, date: (new Date()).toDateString()
 
   resetMessages: (nick) ->
-    delete @robot.data.brain.messages[nick]
+    delete @robot.brain.data.messages[nick]
 
   getMessages: (nick) ->
-    msgs = @robot.data.brain.messages[receiver]
+    msgs = @robot.brain.data.messages[receiver]
     msgs = [] unless msgs
     return msgs
 
