@@ -22,7 +22,7 @@ class MBTell
   addMessage: (sender, receiver, msg) ->
     current = @robot.brain.data.messages[receiver]
     current = @robot.brain.data.messages[receiver] = [] unless current
-    current.push sender: sender, msg: msg, date: (new Date()).toDateString()
+    current.push sender: sender, msg: msg, date: (new Date()).getTime()
 
   resetMessages: (nick) ->
     delete @robot.brain.data.messages[nick]
