@@ -27,7 +27,8 @@
     "jsdom": "0.2.14",
     "sandbox": "0.8.3",
     "soupselect": "0.2.0",
-    "htmlparser": "1.7.6"
+    "htmlparser": "1.7.6",
+    "moment": "1.7.0"
   },
 
   "engines": {
