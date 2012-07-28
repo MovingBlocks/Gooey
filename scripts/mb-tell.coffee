@@ -28,9 +28,7 @@ class MBTell
     delete @robot.brain.data.messages[nick]
 
   getMessages: (nick) ->
-    msgs = @robot.brain.data.messages[receiver]
-    msgs = [] unless msgs
-    return msgs
+    @robot.brain.data.messages[nick]
 
 module.exports = (robot) ->
   tell = new MBTell robot
@@ -46,9 +44,9 @@ module.exports = (robot) ->
     if msgs
       for m in msgs
         msg.send moment(new Date(m.date)).fromNow() + ', ' + m.sender + ' said: ' + m.msg
-    tell.resetMessages name
+      tell.resetMessages name
 
   robot.enter (msg) ->
     user = msg.message.user.name.toLowerCase()
-    if getMessages(user) isnt []
+    if tell.getMessages user
       msg.send msg.message.user.name + ': You have messages waiting. Say something in this chat to receive your message.'
