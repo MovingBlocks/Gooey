@@ -33,7 +33,7 @@ class MBTell
     return msgs
 
 module.exports = (robot) ->
-  tell = new MBTell
+  tell = new MBTell robot
 
   robot.respond /tell ([\w.-`]*) (.*)/i, (msg) ->
     tell.addMessage msg.message.user.name, msg.match[1].toLowerCase(), msg.match[2]
