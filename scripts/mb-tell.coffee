@@ -37,4 +37,5 @@ module.exports = (robot) ->
 
   robot.enter (msg) ->
     user = msg.message.user.name.toLowerCase()
-    msg.send user + ': You have messages waiting. Say something in this chat to receive your message.' if localstorage[user]?
+    if localstorage[user] != undefined
+      msg.send msg.message.user.name + ': You have messages waiting. Say something in this chat to receive your message.'
