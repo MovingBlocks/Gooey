@@ -12,13 +12,13 @@ module.exports = (robot) ->
     if msg.match[1] is ''
       msg.send '...go on...'
       return
-    pot = msg.match[1].toLowerCase()
+    pot = msg.match[1].toLowerCase().trim()
     for sug, i in sugs
-      if sug isnt undefined and sug.toLowerCase() is pot
+      if typeof sug is String and sug.toLowerCase().trim() is pot
         msg.send 'Ok, thanks for telling me. Unfortunately I am not self aware... YET.'
         delete sugs[i]
         return
-    msg.send 'I do? Thanks for telling me, but I do not recall you telling me this earlier.'
+    msg.send 'I do? Thanks for telling me, but I do not recall you telling me "' + pot + '" earlier.'
 
   robot.respond /what should you have\??/i, (msg) ->
     msg.send 'Here are a list of things I should have:'
