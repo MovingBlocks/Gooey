@@ -5,7 +5,7 @@
 
     "factoid.coffee", "google.coffee", "abstract.coffee", "jenkins.coffee",
 
-    "github-activity.coffee", "github-commiters.coffee", "github-credentials.coffee",
+    "github-activity.coffee", "github-commiters.coffee",
     "github-issue-link.coffee", "github-issues.coffee", "github-pulls.coffee",
 
     "hideyakids.coffee", "defprogramming.coffee", "aww.coffee", "ascii.coffee",
