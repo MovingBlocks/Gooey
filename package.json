@@ -1,9 +1,9 @@
 {
-  "name":        "hosted-hubot",
-  "version":     "2.3.0",
-  "author":      "GitHub Inc.",
-  "keywords":    "github hubot campfire bot",
-  "description": "A simple helpful Robot for your Company",
+  "name":        "gooey",
+  "version":     "1.0.0",
+  "author":      "MovingBlocks",
+  "keywords":    "github hubot irc bot movingblocks terasology",
+  "description": "A simple helpful Robot for the Terasology IRC channel",
   "licenses":     [{
     "type":       "MIT",
     "url":        "http://github.com/github/hubot/raw/master/LICENSE"
