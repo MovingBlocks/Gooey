@@ -20,7 +20,7 @@
     "hubot-scripts": ">= 2.1.0",
     "optparse": "1.0.3",
 
-    "githubot": "0.3.0",
+    "githubot": "0.4.0",
     "underscore": "*",
     "underscore.string": "*",
     "date-utils": "*",
