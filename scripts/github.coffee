@@ -17,11 +17,11 @@ module.exports = (robot) ->
 
   robot.respond /create repo (["'\w: -_]+)/i, (msg) ->
     unless robot.Auth.hasRole msg.message.user.name, 'github'
-      msg.send "Why should I listen to you, #{msg.message.user}?"
+      msg.send "Why should I listen to you, #{msg.message.user.name}?"
       return
 
     data =
       name: msg.match[1].trim()
 
-    github.post 'orgs/MovingBlocks/repos', data, (repo) ->
+    github.post 'orgs/Terasology/repos', data, (repo) ->
       msg.send "Repo #{repo.name} created at #{url}"
