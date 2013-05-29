@@ -1,6 +1,10 @@
 extends layout
 
+block jumbotron
+  h1 Gooey Help
+
 block content
-  table.table.table-striped
-    each command in commands
-      tr: td= command
+  .span12
+    table.table.table-striped
+      each command in commands
+        tr: td= command

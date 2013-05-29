@@ -1,6 +1,6 @@
 html
   head
-    title= title
+    title Gooey - #{title}
     link(href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css", rel="stylesheet")
     link(href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.min.css", rel="stylesheet")
     script(src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js")
@@ -47,10 +47,10 @@ html
           li: a(href="/") Home
           li: a(href="/help") Help
           li: a(href="http://forum.movingblocks.net") Forum
-        h3= robot.name
+        h3 Gooey
       hr
       .jumbotron
-        h1= title
+        block jumbotron
       hr
       .row-fluid.marketing
         block content

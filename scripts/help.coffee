@@ -16,6 +16,6 @@ module.exports = (robot) ->
 
   robot.router.get '/help', (req, res) ->
     res.render 'help',
-      title: "#{robot.name} Help"
+      title: "Help"
       commands: robot.helpCommands()
       robot: robot
