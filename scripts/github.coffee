@@ -24,4 +24,4 @@ module.exports = (robot) ->
       name: msg.match[1].trim()
 
     github.post 'orgs/Terasology/repos', data, (repo) ->
-      msg.send "Repo #{repo.name} created at #{url}"
+      msg.send "Repo #{repo.name} created at #{repo.url}"
