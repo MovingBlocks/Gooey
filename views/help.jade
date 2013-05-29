@@ -5,6 +5,15 @@ block jumbotron
 
 block content
   .span12
-    table.table.table-striped
-      each command in commands
-        tr: td= command
+    h2 Full Command List
+    hr
+    a(href="#commands", role="button", data-toggle="modal", data-target="#commands").btn.btn-primary Open List
+    
+    #commands.modal.hide.fade
+      .modal-header
+        button(type="button", data-dismiss="modal", aria-hidden="true").close &times;
+        h3 Full Command List
+      .modal-body
+        table.table.table-striped
+          each command in commands
+            tr: td= command

@@ -18,4 +18,3 @@ module.exports = (robot) ->
     res.render 'help',
       title: "Help"
       commands: robot.helpCommands()
-      robot: robot
