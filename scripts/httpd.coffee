@@ -19,6 +19,8 @@
 spawn = require('child_process').spawn
 
 module.exports = (robot) ->
+  robot.router.set 'view engine', 'jade'
+  robot.router.set 'views', __dirname + '/../views'
 
   robot.router.get "/hubot/version", (req, res) ->
     res.end robot.version

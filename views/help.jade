@@ -1,0 +1,6 @@
+extends layout
+
+block content
+  table.table.table-striped
+    each command in commands
+      tr: td= command
