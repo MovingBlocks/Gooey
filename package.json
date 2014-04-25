@@ -29,7 +29,8 @@
     "soupselect": "0.2.0",
     "htmlparser": "1.7.6",
     "jade": "0.30.0",
-    "moment": "2.0.0"
+    "moment": "2.0.0",
+    "gitio2": "2.0.0"
   },
 
   "engines": {
