@@ -1,5 +1,5 @@
 module.exports = (robot) ->
-  robot.router.post 'hubot/jenkins-notify', (req, res) ->
+  robot.router.post '/hubot/jenkins-notify', (req, res) ->
     try
       data = req.body
       return if data.build.phase isnt 'FINISHED'
