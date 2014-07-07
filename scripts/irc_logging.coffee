@@ -25,8 +25,8 @@ module.exports = (robot) ->
   )
 
   robot.adapter.bot.on 'message', (nick, to, text, message) ->
-    msg = new Message name: nick, message: message, target: to, date: new Date()
+    msg = new Message name: nick, message: text, target: to, date: new Date()
     msg.save (err) ->
       console.log err if err
-      console.log "#{to} #{nick}: #{message}"
+      console.log "#{to} #{nick}: #{text}"
 
