@@ -1,0 +1,10 @@
+extends layout
+
+block jumbotron
+  h1 IRC Logs
+
+block content
+  .span12
+    h2 Logs of #terasology (last 100 messages)
+    each msg in messages
+      p #{msg.nick}: #{msg.message}

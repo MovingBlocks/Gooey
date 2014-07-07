@@ -30,3 +30,9 @@ module.exports = (robot) ->
       console.log err if err
       console.log "#{to} #{nick}: #{text}"
 
+  robot.router.get '/logs', (req, res) ->
+    Message.find(target: '#terasology').limit(100).exec (err, messages) ->
+      res.render 'logs',
+        title: 'Logs'
+        messages: messages
+
