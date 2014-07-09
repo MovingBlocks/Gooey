@@ -5,7 +5,7 @@
 
     "factoid.coffee", "google.coffee", "abstract.coffee", "jenkins.coffee",
 
-    "github-issue-link.coffee", "github-commit-link.coffee", "github-issues.coffee", "github-commits.coffee"
+    "github-issue-link.coffee", "github-commit-link.coffee", "github-issues.coffee", "github-commits.coffee",
 
     "aww.coffee", "facepalm.coffee", "look-of-disapproval.coffee", "polite.coffee",
     "rofl.coffee", "romanemperor.coffee", "roll.coffee"
