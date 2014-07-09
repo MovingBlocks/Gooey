@@ -1,8 +1,6 @@
 [
     "redis-brain.coffee",
 
-    "auth.coffee",
-
     "factoid.coffee", "google.coffee", "abstract.coffee", "jenkins.coffee",
 
     "github-issue-link.coffee", "github-commit-link.coffee", "github-issues.coffee", "github-commits.coffee",
